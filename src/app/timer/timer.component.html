@@ -1,0 +1,11 @@
+<div class="container">
+  <button class="btn btn-primary" (click)="startTimer()"> Start </button>
+  <button class="btn btn-primary" (click)="stopTimer()"> Stop </button>
+  <button class="btn btn-primary" (dblclick)="waitTimer()"> Wait </button>
+  <button class="btn btn-primary" (click)="resetTimer()"> Reset </button>
+  <div>
+    {{hour | addZero: '0':'10'}} : {{minute | addZero: '0':'10' }} : {{second | addZero: '0':'10'}}
+    <hr>
+  </div>
+</div>
+
